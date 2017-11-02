@@ -1,0 +1,54 @@
+{
+  "name": "b70",
+  "version": "0.0.0",
+  "description": "BIP70 for bcoin",
+  "keywords": [
+    "bip70",
+    "payment",
+    "protocol"
+  ],
+  "license": "MIT",
+  "repository": "git://github.com/bcoin-org/b70.git",
+  "homepage": "https://github.com/bcoin-org/b70",
+  "bugs": {
+    "url": "https://github.com/bcoin-org/b70/issues"
+  },
+  "author": "Christopher Jeffrey <chjjeffrey@gmail.com>",
+  "main": "./lib/b70.js",
+  "scripts": {
+    "browserify": "browserify -s b70 lib/b70.js | uglifyjs -c > b70.js",
+    "clean": "rm -f b70.js",
+    "lint": "eslint lib/ test/ || exit 0",
+    "test": "mocha --reporter spec test/*-test.js",
+    "webpack": "webpack --config webpack.config.js"
+  },
+  "dependencies": {
+    "bbuf": "^0.0.1",
+    "bcrypto": "^0.0.1",
+    "bcoin": "^1.0.0-beta.15",
+    "elliptic": "^6.4.0"
+  },
+  "devDependencies": {
+    "babelify": "^7.3.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "browserify": "^14.5.0",
+    "eslint": "^4.9.0",
+    "mocha": "^4.0.1",
+    "uglifyjs-webpack-plugin": "^1.0.0-beta.3",
+    "uglify-es": "^3.1.3",
+    "webpack": "^3.8.1"
+  },
+  "engines": {
+    "node": ">=7.6.0"
+  },
+  "browser": {
+    "./lib/rsa": "./lib/rsa-browser.js"
+  },
+  "browserify": {
+    "transform": [
+      "babelify"
+    ]
+  }
+}
