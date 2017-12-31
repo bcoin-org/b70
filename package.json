@@ -1,6 +1,6 @@
 {
   "name": "b70",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "BIP70 for bcoin",
   "keywords": [
     "bip70",
@@ -23,7 +23,7 @@
     "webpack": "webpack --config webpack.config.js"
   },
   "dependencies": {
-    "bcrypto": "~0.0.1",
+    "bcrypto": "~0.0.2",
     "bcoin": "~1.0.0",
     "bufio": "~0.0.1",
     "elliptic": "~6.4.0"
