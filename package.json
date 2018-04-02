@@ -23,8 +23,8 @@
     "webpack": "webpack --config webpack.config.js"
   },
   "dependencies": {
+    "bcoin": "^1.0.0-beta.15",
     "bcrypto": "~0.2.0",
-    "bcoin": "~1.0.0",
     "bufio": "~0.0.3",
     "elliptic": "~6.4.0"
   },
