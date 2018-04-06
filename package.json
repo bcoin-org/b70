@@ -25,7 +25,7 @@
   "dependencies": {
     "bcrypto": "~0.2.0",
     "bcoin": "~1.0.0",
-    "bufio": "~0.0.3",
+    "bufio": "~0.1.0",
     "elliptic": "~6.4.0"
   },
   "devDependencies": {
