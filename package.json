@@ -1,6 +1,6 @@
 {
   "name": "b70",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "BIP70 for bcoin",
   "keywords": [
     "bip70",
