@@ -53,9 +53,13 @@ tojs() {
   echo ''
   echo 'module.exports = ['
   echo "$body" | while read line; do
-    echo "  Buffer.from('${line}', 'hex'),"
+    echo "  Buffer.from("
+    echo "    '${line}',"
+    echo "    'hex'),"
   done
-  echo "  Buffer.from('${last}', 'hex')"
+  echo "  Buffer.from("
+  echo "    '${last}',"
+  echo "    'hex')"
   echo '];'
 }
 
