@@ -20,12 +20,9 @@
     "test": "mocha --reporter spec test/*-test.js"
   },
   "dependencies": {
-    "bcoin": "~1.0.0",
     "bcrypto": "~1.0.0",
-    "bn.js": "~4.11.8",
-    "bsert": "~0.0.3",
-    "bufio": "~1.0.1",
-    "elliptic": "~6.4.0"
+    "bsert": "~0.0.4",
+    "bufio": "~1.0.1"
   },
   "devDependencies": {
     "eslint": "^5.1.0",
@@ -33,8 +30,5 @@
   },
   "engines": {
     "node": ">=8.0.0"
-  },
-  "browser": {
-    "./lib/rsa": "./lib/rsa-browser.js"
   }
 }
