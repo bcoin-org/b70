@@ -26,7 +26,7 @@ const req = new b70.PaymentRequest({
 
 // Sign it.
 req.setChain([crt]); // Certificate Chain
-req.sign(key); // PEM/DER formatted private key
+req.sign(key); // DER formatted private key
 
 // Serialize to protobuf format.
 const raw = req.toRaw();
